@@ -208,3 +208,22 @@ for (i = 0; i < acc.length; i++) {
       alert("Failed to send mail");
     });
   }
+
+
+// Get certificate elements
+const thumbnails = document.querySelectorAll('.cert-image');
+const fullImageContainer = document.getElementById('fullImageContainer');
+const fullImage = document.getElementById('fullImage');
+
+// Loop through all thumbnails and add click event listeners
+thumbnails.forEach(thumbnail => {
+    thumbnail.onclick = function() {
+        fullImage.src = thumbnail.src;  // Set the full image source to the thumbnail's source
+        fullImageContainer.style.display = 'flex';  // Show the full image container
+    };
+});
+
+// Hide full image on click
+fullImageContainer.onclick = function() {
+    fullImageContainer.style.display = 'none';
+};
