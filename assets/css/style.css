@@ -2069,7 +2069,7 @@ textarea.form-input::-webkit-resizer {
   height: 150px;
   border-radius: 50%;
   object-fit: cover;
-  transition: transform 0.3s ease;
+  transition: transform 0.5s ease;
 }
 
 .talk-bubble {
@@ -2079,7 +2079,7 @@ textarea.form-input::-webkit-resizer {
   height: auto;
   background-color: white;
   border-radius: 15px;
-  transition: transform 0.3s ease;
+  transition: transform 0.5s ease;
 }
 .border{
   border: 8px solid #666;
@@ -2160,18 +2160,18 @@ textarea.form-input::-webkit-resizer {
 }
 
 .recommendation .title,
-.recommendation .job-title,
-.recommendation a,
-.recommendation img {
-  transition: color 0.3s ease, transform 0.3s ease; /* Smooth color and size transition */
+.recommendation .job-title {
+  transition: color 0.5s ease, transform 0.5s ease; /* Smooth color and size transition */
 }
 
 .recommendation:hover .title,
-.recommendation:hover .job-title,
-.recommendation:hover a,
-.recommendation img {
+.recommendation:hover .job-title {
   color: var(--orange-yellow-crayola); /* New color on hover */
   transform: scale(1.10); /* Slightly increase size (5% larger) */
+}
+
+.recommendation:hover .recommender img {
+  transform: scale(1.10);
 }
 
 .job-title {
